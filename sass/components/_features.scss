@@ -1,0 +1,50 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: $primary-white-color;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+}
+
+.features__item {
+  flex-basis: 270px;
+}
+
+.features__bg {
+  @extend %centeredFlex;
+  width: 270px;
+  height: 120px;
+  background-color: $primary-bg-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}
+
+.features__lead {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $secondary-text-color;
+}
