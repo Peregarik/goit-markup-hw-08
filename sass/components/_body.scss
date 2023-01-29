@@ -2,4 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: $primary-white-color;
   color: $primary-text-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }

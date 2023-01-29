@@ -1,4 +1,7 @@
 .hero {
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -28,26 +31,14 @@
 
   @media screen and (min-width: $low-mobile) {
     max-width: 480px;
-    height: 400px;
-
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
 
   @media screen and (min-width: $mobile) {
     max-width: 480px;
-    height: 400px;
-
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
 
   @media screen and (min-width: $tablet) {
     max-width: 768px;
-    height: 400px;
-
-    padding-top: 118px;
-    padding-bottom: 118px;
 
     background-image: linear-gradient(
         to right,
@@ -101,7 +92,8 @@
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
 
@@ -109,16 +101,6 @@
   text-transform: uppercase;
 
   color: $primary-white-color;
-
-  @media screen and (min-width: $low-mobile) {
-    font-size: 26px;
-    line-height: 1.6;
-  }
-
-  @media screen and (min-width: $mobile) {
-    font-size: 26px;
-    line-height: 1.6;
-  }
 
   @media screen and (min-width: $desktop) {
     width: 700px;

@@ -13,36 +13,21 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 
   color: $primary-white-color;
-  @media screen and (min-width: $low-mobile) {
-    display: flex;
-    justify-content: center;
-  }
-  @media screen and (min-width: $mobile) {
-    display: flex;
-    justify-content: center;
-  }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
     justify-content: start;
   }
 }
 
 .footer-form__posotion-input {
   display: flex;
-
-  @media screen and (min-width: $low-mobile) {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media screen and (min-width: $mobile) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: $desktop) {
     flex-direction: row;
@@ -50,32 +35,28 @@
 }
 
 .footer-form__input {
+  width: 358px;
   height: 50px;
-  background-color: $secondary-bg-color;
+  margin-bottom: 20px;
+  padding-left: 16px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding-left: 16px;
+
+  background-color: $secondary-bg-color;
   color: $primary-white-color;
 
-  @media screen and (min-width: $low-mobile) {
-    margin-bottom: 20px;
+  @media screen and (min-width: $low-mobile) and (max-width: 479.9px) {
     width: 250px;
   }
 
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 20px;
-    width: 358px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 20px;
+  @media screen and (min-width: $tablet) and (max-width: 1199.9px) {
     width: 450px;
   }
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 0;
-    width: 358px;
   }
 }
 

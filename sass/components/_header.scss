@@ -14,13 +14,6 @@
     display: inline-block;
   }
 
-  @media screen and (min-width: $mobile) {
-    font-size: 24px;
-    line-height: 1.16;
-    padding: 16px 0;
-    display: inline-block;
-  }
-
   @media screen and (min-width: $desktop) {
     font-size: 26px;
     line-height: 1.19;
@@ -108,7 +101,6 @@
     margin-left: 96px;
   }
   @media screen and (min-width: $desktop) {
-    display: flex;
     flex-direction: row;
     margin-left: auto;
     gap: 50px;
@@ -170,11 +162,7 @@
 }
 
 .cont__header-mail {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.9px) {
     margin-bottom: 10px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 0;
   }
 }

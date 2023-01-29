@@ -8,16 +8,8 @@
 
 .page-footer__position {
   display: flex;
-
-  @media screen and (min-width: $low-mobile) {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media screen and (min-width: $mobile) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: $tablet) {
     flex-flow: row wrap;
@@ -28,21 +20,13 @@
 
   @media screen and (min-width: $desktop) {
     flex-direction: row;
-    align-items: baseline;
   }
 }
 
 .page-footer__position-address {
   display: flex;
   flex-direction: column;
-
-  @media screen and (min-width: $low-mobile) {
-    align-items: center;
-  }
-
-  @media screen and (min-width: $mobile) {
-    align-items: center;
-  }
+  align-items: center;
 
   @media screen and (min-width: $desktop) {
     align-items: flex-start;
@@ -67,14 +51,6 @@
     justify-content: center;
   }
 
-  @media screen and (min-width: $mobile) {
-    width: 154px;
-    font-size: 24px;
-    line-height: 1.16;
-    display: flex;
-    justify-content: center;
-  }
-
   @media screen and (min-width: $desktop) {
     width: 145px;
     font-size: 26px;
@@ -89,16 +65,9 @@
 .page-footer__address {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 230px;
   font-style: normal;
-
-  @media screen and (min-width: $low-mobile) {
-    align-items: center;
-  }
-
-  @media screen and (min-width: $mobile) {
-    align-items: center;
-  }
 
   @media screen and (min-width: $desktop) {
     align-items: flex-start;
@@ -156,6 +125,9 @@
 }
 
 .page-footer__social-title {
+  display: flex;
+  justify-content: center;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -165,18 +137,7 @@
 
   color: $primary-white-color;
 
-  @media screen and (min-width: $low-mobile) {
-    display: flex;
-    justify-content: center;
-  }
-
-  @media screen and (min-width: $mobile) {
-    display: flex;
-    justify-content: center;
-  }
-
   @media screen and (min-width: $desktop) {
-    display: flex;
     justify-content: start;
   }
 }
