@@ -200,7 +200,7 @@
   border: 2px solid $primary-text-color;
   border-radius: 4px;
 
-  @media screen and (max-width: $low-mobile) {
+  @media screen and (max-width: $mobile) {
     width: 20px;
     height: 13px;
   }
