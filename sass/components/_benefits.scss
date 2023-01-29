@@ -1,3 +1,9 @@
+.reviews-b {
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
 .benefits {
   padding-bottom: 94px;
   background-color: $primary-white-color;

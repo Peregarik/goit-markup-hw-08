@@ -17,7 +17,19 @@
         </a>
 
         <nav class="header__nav">
-          <ul class="nav__list">
+          <button class="mobile-menu__open js-open-menu" type="button">
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатьель мобильного меню"
+            >
+              <use
+                class="icon-menu"
+                href=".//images/iconMobile.svg#menuMobile"
+              ></use>
+            </svg>
+          </button>
+          <ul class="nav__list reviews-a">
             <li class="nav__item">
               <a class="nav__link current" href="./index.html">Студія</a>
             </li>
@@ -30,8 +42,8 @@
           </ul>
         </nav>
 
-        <ul class="header__cont">
-          <li>
+        <ul class="header__cont reviews-a">
+          <li cont__item>
             <a
               class="cont__header-mail"
               href="mailto:info@devstudio.com"
@@ -43,7 +55,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li cont__item>
             <a
               class="cont__header-tel"
               href="tel:+380961111111"
@@ -128,7 +140,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section class="benefits">
+      <section class="benefits reviews-b">
         <div class="container">
           <h2 class="benefits__title">Чим ми займаємося</h2>
 
@@ -136,6 +148,7 @@
             <li class="benefits__item">
               <img
                 class="benefits__photo"
+                srcset="images/box1.jpg 1x, images/box1@2x.jpg 2x"
                 src="images/box1.jpg"
                 alt="Десктопні додатки"
                 width="370"
@@ -147,6 +160,7 @@
             <li class="benefits__item">
               <img
                 class="benefits__photo"
+                srcset="images/box2.jpg 1x, images/box2@2x.jpg 2x"
                 src="images/box2.jpg"
                 alt="Мобільні додатки"
                 width="370"
@@ -158,6 +172,7 @@
             <li class="benefits__item">
               <img
                 class="benefits__photo"
+                srcset="images/box3.jpg 1x, images/box3@2x.jpg 2x"
                 src="images/box3.jpg"
                 alt="Дизайнерські рішення"
                 width="370"
@@ -176,12 +191,34 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="images/teamcardIhor.jpg"
-                alt="Фото члена команди"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/teamcardIhor.jpg   1x,
+                    images/teamcardIhor2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/teamcardIhorTablet.jpg   1x,
+                    images/teamcardIhorTablet2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    images/teamcardIhorMobile.jpg   1x,
+                    images/teamcardIhorMobile2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team__photo"
+                  src="images/teamcardIhorMobile.jpg"
+                  alt="Фото члена команди"
+                />
+              </picture>
               <div class="box-team-description">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__titul">Product Designer</p>
@@ -218,12 +255,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="images/teamcardOlha.jpg"
-                alt="Фото члена команди"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/teamcardOlha.jpg   1x,
+                    images/teamcardOlha2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/teamcardOlhaTablet.jpg   1x,
+                    images/teamcardOlhaTablet2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    images/teamcardOlhaMobile.jpg   1x,
+                    images/teamcardOlhaMobile2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team__photo"
+                  src="images/teamcardOlhaMobile.jpg"
+                  alt="Фото члена команди"
+                />
+              </picture>
               <div class="box-team-description">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__titul">Frontend Developer</p>
@@ -260,12 +319,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="images/teamcardMykola.jpg"
-                alt="Фото члена команди"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/teamcardMykola.jpg   1x,
+                    images/teamcardMykola2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/teamcardMykolaTablet.jpg   1x,
+                    images/teamcardMykolaTablet2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    images/teamcardMykolaMobile.jpg   1x,
+                    images/teamcardMykolaMobile2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team__photo"
+                  src="images/teamcardMykolaMobile.jpg"
+                  alt="Фото члена команди"
+                />
+              </picture>
               <div class="box-team-description">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__titul">Marketing</p>
@@ -302,12 +383,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="images/teamcardMikhailo.jpg"
-                alt="Фото члена команди"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/teamcardMikhailo.jpg   1x,
+                    images/teamcardMikhailo2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/teamcardMikhailoTablet.jpg   1x,
+                    images/teamcardMikhailoTablet2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    images/teamcardMikhailoMobile.jpg   1x,
+                    images/teamcardMikhailoMobile2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team__photo"
+                  src="images/teamcardMikhailoMobile.jpg"
+                  alt="Фото члена команди"
+                />
+              </picture>
               <div class="box-team-description">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__titul">UI Designer</p>
@@ -479,6 +582,64 @@
         </div>
       </div>
     </footer>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__close js-close-menu" type="button">
+        <svg width="40" height="40" aria-label="Переключатьель мобильного меню">
+          <use
+            class="icon-cross"
+            href=".//images/iconMobile.svg#crossMobile"
+          ></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link current" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-cont">
+        <li class="mobile-cont__item">
+          <a
+            class="mobile-cont__tel"
+            href="tel:+380961111111"
+            aria-label="Телефон"
+          >
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-cont__item">
+          <a
+            class="mobile-cont__mail"
+            href="mailto:info@devstudio.com"
+            aria-label="Почта"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+          <a class="mobile-social__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <!-- Модальное окно -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
@@ -546,5 +707,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

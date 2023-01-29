@@ -1,11 +1,21 @@
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .container-header {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
@@ -13,4 +23,24 @@
   align-items: center;
 
   background-color: $primary-white-color;
+
+  @media screen and (min-width: $low-mobile) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    justify-content: start;
+  }
 }

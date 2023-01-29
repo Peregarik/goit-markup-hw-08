@@ -1,30 +1,92 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-
-  max-width: 1600px;
-  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   background-color: $hero-bg-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/headeroverlay.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+    url(../images/headeroverlayMobile.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url("../../images/headeroverlayMobile2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $low-mobile) {
+    max-width: 480px;
+    height: 400px;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+    height: 400px;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    height: 400px;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/headeroverlayTablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url("../../images/headeroverlayTablet2x.jpg");
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/headeroverlay.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url("../../images/headeroverlay2x.jpg");
+      }
+    }
+  }
 }
 
 .hero__title {
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+
   letter-spacing: 0.06em;
   margin-bottom: 30px;
 
@@ -32,6 +94,22 @@
   text-transform: uppercase;
 
   color: $primary-white-color;
+
+  @media screen and (min-width: $low-mobile) {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: $mobile) {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {

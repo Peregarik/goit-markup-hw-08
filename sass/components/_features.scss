@@ -1,29 +1,97 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: $primary-white-color;
+
+  @media screen and (min-width: $low-mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features__list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  gap: 30px;
+
+  @media screen and (min-width: $low-mobile) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $mobile) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    margin-left: 0;
+    margin-bottom: 0;
+    gap: 30px;
+  }
 }
 
 .features__item {
-  flex-basis: 270px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 767.9px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
+    width: 50%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: 270px;
+    margin-left: 0;
+  }
 }
 
 .features__bg {
-  @extend %centeredFlex;
-  width: 270px;
-  height: 120px;
   background-color: $primary-bg-color;
   border-radius: 4px;
   margin-bottom: 30px;
+  height: 120px;
+  @extend %centeredFlex;
+
+  @media screen and (min-width: $low-mobile) {
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
 }
 
 .features__icon {
