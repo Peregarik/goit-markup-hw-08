@@ -958,6 +958,7 @@ body.modal-open {
     -ms-flex-preferred-size: 270px;
         flex-basis: 270px;
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
