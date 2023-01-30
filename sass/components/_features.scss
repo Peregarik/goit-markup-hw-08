@@ -86,6 +86,11 @@
   letter-spacing: 0.03em;
 
   color: $primary-text-color;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .features__lead {

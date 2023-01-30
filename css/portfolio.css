@@ -1003,6 +1003,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer-form {
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 

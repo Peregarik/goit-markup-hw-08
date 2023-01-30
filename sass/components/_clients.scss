@@ -44,7 +44,7 @@
 
   @media screen and (min-width: $low-mobile) and (max-width: 1199.9px) {
     flex-basis: calc(100% / 2 - 30px);
-    width: 50%;
+
     margin-left: 10px;
     margin-bottom: 30px;
   }
@@ -79,7 +79,9 @@
     border-color: $accent-text-color;
     color: $accent-text-color;
   }
-
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
   @media screen and (min-width: $desktop) {
     width: 170px;
   }

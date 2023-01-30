@@ -676,10 +676,21 @@ body.modal-open {
   color: #2196f3;
 }
 
+.position__cont-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100% - 284px);
+}
+
 .mobile-cont {
-  list-style: none;
-  margin-top: 306px;
+  margin-top: auto;
   margin-left: 40px;
+  list-style: none;
 }
 .mobile-cont__item {
   margin-bottom: 32px;
@@ -726,7 +737,7 @@ body.modal-open {
 .mobile-social__item:last-child {
   border-right: none;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 435px) {
   .mobile-social {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -833,6 +844,11 @@ body.modal-open {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -975,6 +991,16 @@ body.modal-open {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 480px) {
+  .features__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .features__lead {
   font-size: 14px;
@@ -1060,11 +1086,17 @@ body.modal-open {
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team__list {
@@ -1263,7 +1295,6 @@ body.modal-open {
   .clients__item {
     -ms-flex-preferred-size: calc(50% - 30px);
         flex-basis: calc(50% - 30px);
-    width: 50%;
     margin-left: 10px;
     margin-bottom: 30px;
   }
@@ -1303,6 +1334,11 @@ body.modal-open {
 .clients__link:hover, .clients__link:focus {
   border-color: #2196f3;
   color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients__link {
@@ -1551,6 +1587,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer-form {
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 

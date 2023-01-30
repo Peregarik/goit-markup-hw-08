@@ -101,7 +101,9 @@
   text-transform: uppercase;
 
   color: $primary-white-color;
-
+  @media screen and (min-width: $tablet) {
+    width: 360px;
+  }
   @media screen and (min-width: $desktop) {
     width: 700px;
     font-size: 44px;
