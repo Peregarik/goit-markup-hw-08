@@ -8,7 +8,6 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: $primary-white-color;
-  overflow-y: scroll;
 
   &.is-open {
     transform: translateX(0);
@@ -122,18 +121,19 @@
   &__item:last-child {
     border-right: none;
   }
-  @media screen and (max-width: 435px) {
-    flex-direction: row;
+  @media screen and (max-width: 445px) {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
     &__item {
-      display: flex;
-      flex-wrap: wrap;
       flex-basis: calc(100% / 3);
-      width: 50%;
-      margin-right: 20px;
+      margin-right: 40px;
       margin-bottom: 20px;
+
+      @media screen and (max-width: 382px) {
+        margin-right: 10px;
+      }
     }
 
     &__item:nth-child(2) {
