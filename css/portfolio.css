@@ -584,14 +584,14 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .cont__header-mail,
-.cont__header-tel {
+  .cont__header-tel {
     font-size: 12px;
     line-height: 1.16;
   }
 }
 @media screen and (min-width: 1200px) {
   .cont__header-mail,
-.cont__header-tel {
+  .cont__header-tel {
     padding-top: 32px;
     padding-bottom: 32px;
     margin-bottom: 0;

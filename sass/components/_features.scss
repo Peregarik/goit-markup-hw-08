@@ -49,6 +49,7 @@
 
   @media screen and (min-width: $desktop) {
     flex-basis: 270px;
+    align-content: flex-start;
     margin-left: 0;
     margin-bottom: 0;
   }
